@@ -6,7 +6,7 @@ const meta: Meta<typeof Button> = {
     title: "Components/Button",
     component: Button,
     parameters: {
-        // layout: "centered",
+        layout: "centered",
     },
     tags: ["autodocs"],
 };
@@ -18,5 +18,8 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
     args: {
         children: "click me",
+        onClick: () => {
+            console.log("click me");
+        },
     },
 };
