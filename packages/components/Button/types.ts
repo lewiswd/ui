@@ -6,8 +6,8 @@ type ButtonVariantProp = "contained" | "outlined" | "light";
 
 export type ButtonProps = {
     children: ReactNode;
-    className?: string;
     variant?: ButtonVariantProp;
+    className?: string;
     color?: LwColor;
     size?: LwFontSize;
     radius?: LwRadius;
@@ -17,6 +17,17 @@ export type ButtonProps = {
     isDisabled?: boolean;
     isLoading?: boolean;
     textIsLoading?: string;
+
+    onClick?: () => void;
+};
+
+export type IconButtonProps = {
+    icon: ReactNode;
+    variant?: ButtonVariantProp;
+    className?: string;
+    color?: LwColor;
+    radius?: LwRadius;
+    isDisabled?: boolean;
 
     onClick?: () => void;
 };

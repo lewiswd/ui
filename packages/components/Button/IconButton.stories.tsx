@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import Button from "./Button";
+import IconButton from "./IconButton";
 
-const meta: Meta<typeof Button> = {
-    title: "Components/Button",
-    component: Button,
+const meta: Meta<typeof IconButton> = {
+    title: "Components/IconButton",
+    component: IconButton,
     parameters: {
         layout: "centered",
     },
@@ -17,11 +17,10 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
     args: {
-        children: "click me",
         icon: (
             <svg
-                width={18}
-                height={18}
+                width={24}
+                height={24}
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
             >
