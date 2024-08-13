@@ -1,7 +1,3 @@
-# Slots
-
--   button: The button slots, it wraps the children.
-
 # API
 
 | Attribute   | Type          | Description                                                  | Default   |
@@ -9,7 +5,7 @@
 | children\*  | ReactNode     | The children to render inside the button.                    | -         |
 | className   | string        | Allows to set custom class names for the button slots.       | -         |
 | variant     | ButtonVariant | The button appearance style.                                 | contained |
-| color       | LwColor       | The button color theme.                                      | -         |
+| color       | LwColor       | The button color theme.                                      | gray      |
 | size        | LwFontSize    | The button size.                                             | base      |
 | radius      | LwRadius      | The button radius.                                           | lg        |
 | spinner     | ReactNode?    | Spinner to display when loading.                             | -         |
